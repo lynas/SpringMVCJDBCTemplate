@@ -29,4 +29,28 @@ public class HomeController {
         System.out.println(appUserService.getUserByID(id).getUserName());
         return "home";
     }
+
+    @RequestMapping(value = "/test")
+    public String appUserByUserName() {
+        System.out.println(appUserService.loadUserByUsername("lynas").getUserName());
+        return "home";
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
